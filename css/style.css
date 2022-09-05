@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #000;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    gap: 50px;
+}
+i::before{
+    content: '\f121';
+    font-size: 150px;
+}
+i::before{
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400% !important;
+    animation: test 5s infinite alternate;
+    background: linear-gradient(60deg, #f0f 0%, #0f0 50%, #00f 100%);
+}
+.main h1{
+    background: linear-gradient(60deg, #f0f 0%, #0f0 50%, #00f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: test 5s infinite alternate;
+    font-size: 150px;
+}
+@keyframes test {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+    
+}
